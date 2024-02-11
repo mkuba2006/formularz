@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;900;1000&display=swap');
+body{
+    background-color: #F2EFE5;
+    color: black;
+}
+
+
+#centrum {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    width: 60vw;
+    height: 70vh;
+    border: none;
+    border-radius: 25px 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#jeden,#dwa{
+    width: 50%; 
+}
+
+#dwa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 15px 15px 0;
+    gap: 25px;
+    background: #ff425b;
+}
+#dwa h1{
+    color: white;
+    font-size: 40px;
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    font-weight: 800;
+    padding: 0 30px;
+    text-align: center;
+}
+#dwa p{
+    text-align: center;
+    font-size: 20px;
+    margin: 0 40px;
+    padding: 0 30px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+#jeden{
+    border-radius: 15px 0 0 15px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+#jeden h1{
+    text-align: center;
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    font-size: 50px;
+    margin: 10px 0;
+    margin-top: 50px;
+}
+button {
+    margin: 20px auto;
+    width: 50px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.671);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in;
+}
+
+button:hover {
+    transform: scale(0.97);
+}
+
+
+
+button a {
+    width: 24px;
+    height: 24px;
+}
+
+#ig {
+    width: 23px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+form h3{
+    margin: 3px 0;
+    font-weight: 400;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+input[type="text"]{
+    border-radius: 3px;
+    font-family: 'Mulish', sans-serif;
+    width: 60%;
+    padding: 8px 16px 9px 16px;
+    background-color: rgb(238, 235, 235);
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+input[type="text"]:focus{
+    outline: 2px solid blue;
+}
+
+
+
+
+
+input[type="submit"]{
+    background: hsla(352, 100%, 63%, 1);
+    padding: 12px 42px;
+    color: white;
+    border: none;
+    font-size: 24px;
+    border-radius: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    scale: 0.98;
+}
+
+
+
+@media screen and (max-width:1400px) {
+    #centrum {
+        width: 85vw;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #centrum {
+        width: 85vw;
+        height: 70vh;
+    }
+    #dwa h1{
+        color: white;
+        font-size: 30px;
+        font-family: 'Mulish', sans-serif;
+        margin: 0;
+        font-weight: 800;
+        padding: 0 20px;
+        text-align: center;
+    }
+    #dwa p{
+        text-align: center;
+        font-size: 20px;
+        margin: 0 30px;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+}
+
+
+@media screen and (max-width:900px) {
+    #centrum {
+        flex-direction: column;
+        height: 90vh;
+        transform: translate(-50%, -40%);
+        background-color: rgb(255, 255, 255);
+    }
+    
+    #jeden{
+        border-radius: 15px;
+        width: 100%; 
+        height: 100%;
+    }
+    #dwa{
+        height: 0%;
+        display: none;
+    }
+}
