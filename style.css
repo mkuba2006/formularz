@@ -203,3 +203,26 @@ input[type="submit"]:hover{
         display: none;
     }
 }
+
+
+@media screen and (max-width: 700px) {
+    #centrum {
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        transform: translateX(-50%);
+        background-color: rgb(255, 255, 255);
+        top: 10%;
+        padding-bottom: 400px;
+    }
+    
+    #jeden{
+        border-radius: 15px;
+        width: 100%; 
+        height: 100%;
+    }
+    #dwa{
+        height: 0%;
+        display: none;
+    }
+}
