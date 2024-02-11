@@ -163,7 +163,7 @@ input[type="submit"]:hover{
 @media screen and (max-width:1200px) {
     #centrum {
         width: 85vw;
-        height: 70vh;
+        height: 570px;
     }
     #dwa h1{
         color: white;
@@ -185,11 +185,18 @@ input[type="submit"]:hover{
 }
 
 
+
+
+
+
+
+
 @media screen and (max-width:900px) {
     #centrum {
+        position: relative;
         flex-direction: column;
-        height: 90vh;
-        transform: translate(-50%, -40%);
+        height: 700px;
+        transform: translate(-50%, 10%);
         background-color: rgb(255, 255, 255);
     }
     
@@ -208,11 +215,12 @@ input[type="submit"]:hover{
 @media screen and (max-width: 700px) {
     #centrum {
         flex-direction: column;
-        height: auto;
+        height: 280px;
         width: 100vw;
         transform: translateX(-50%);
         background-color: rgb(255, 255, 255);
         top: 10%;
+        margin-bottom: 0;
         padding-bottom: 400px;
     }
     
@@ -224,5 +232,20 @@ input[type="submit"]:hover{
     #dwa{
         height: 0%;
         display: none;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    input[type="text"]{
+        border-radius: 3px;
+        font-family: 'Mulish', sans-serif;
+        width: 75%;
+        padding: 8px 16px 9px 16px;
+        background-color: rgb(238, 235, 235);
+        color: rgba(0, 0, 0, 0.685);
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
     }
 }
