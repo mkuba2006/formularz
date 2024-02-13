@@ -196,7 +196,7 @@ input[type="submit"]:hover{
     #centrum {
         position: relative;
         flex-direction: column;
-        height: 700px;
+        height: 580px;
         transform: translate(-50%, 10%);
         background-color: rgb(255, 255, 255);
     }
@@ -218,9 +218,8 @@ input[type="submit"]:hover{
         flex-direction: column;
         height: 220px;
         width: 100vw;
-        transform: translateX(-50%);
+        transform: translate(-50%, 5%);
         background-color: rgb(255, 255, 255);
-        top: 10%;
         margin-bottom: 0;
         padding-bottom: 400px;
     }
